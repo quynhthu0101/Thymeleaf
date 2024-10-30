@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/Layout">
+<head>
+    <title>Home Page</title>
+</head>
+<body>   
+
+    <header class="row">
+        <div class="col">
+            <div th:replace="~{commons/web/header :: header}"></div>
+        </div>
+    </header>
+
+    <section class="row mt-4">
+        <div class="col mt-5 mb-5">
+            <div layout:fragment="content"></div>
+        </div>
+    </section>
+
+    <footer class="row">
+        <div class="col">
+            <div th:replace="~{commons/web/footer :: footer}"></div>
+        </div>
+    </footer>   
+
+</body>
+</html>
